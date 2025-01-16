@@ -1,0 +1,11 @@
+### 모든 컨텐츠 조회 (최신순)
+GET http://localhost:8080/api/v1/monitor/contents
+
+### 특정 사이트의 컨텐츠 조회 (최신순)
+GET http://localhost:8080/api/v1/monitor/contents?site=NATE_NEWS
+
+### 특정 개수만큼 조회
+GET http://localhost:8080/api/v1/monitor/contents?limit=5
+
+### 특정 사이트의 특정 개수 컨텐츠 조회
+GET http://localhost:8080/api/v1/monitor/contents?site=NATE&limit=3

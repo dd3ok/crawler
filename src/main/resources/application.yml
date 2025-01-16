@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: crawler_db
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka:
+  topic:
+    crawler: crawler-contents
+
+crawler:
+  retry:
+    max-attempts: 3
+    delay-ms: 1000
+  wait:
+    default-time-ms: 2000
+  targets:
+    - site: nate_news
+      url: https://news.nate.com
+
+  schedule:
+    interval: 10000  # 10?
